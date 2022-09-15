@@ -11,6 +11,7 @@
 body {
     /* stop extra right side move */
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 :root {
@@ -933,9 +934,11 @@ figure img {
     html {
         font-size: 50%;
     }
-p{
-    line-height: 1.05;
-}
+
+    p {
+        line-height: 1.05;
+    }
+
     .mobile-nav-icon {
         width: 5rem;
         height: 5rem;
@@ -999,12 +1002,13 @@ p{
         display: block;
         /* z-index: 9999; */
     }
+
     /* **************************sec=rvice section */
-    .section-service .grid-three-column{
-        grid-template-columns: repeat(2,1fr);
+    .section-service .grid-three-column {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .section-service  .gird
-    {
+
+    .section-service .gird {
         gap: 6rem;
         /* kdasjfjdaf */
     }
@@ -1040,4 +1044,97 @@ p{
         gap: 4.8rem;
     }
 
+}
+
+@media (max-width:49em) {
+    .hero-heading {
+        font-size: 3.4rem;
+    }
+
+    .container {
+        max-width: 71rem;
+        /* align-items: center; */
+        margin: 0 8rem;
+
+    }
+
+    .section-hero .grid-two-column {
+        grid-template-columns: 1fr;
+        justify-self: center;
+        align-items: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+
+
+    }
+
+    .hero-top-data {
+        align-items: center;
+    }
+
+    .section-hero .gird {
+        /* display: grid; */
+        /* flex-direction: column; */
+        justify-self: center;
+        align-items: center;
+        /* background: #000; */
+    }
+
+    .hero-top-data {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-para {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .hero-heading {
+        text-align: center;
+    }
+
+    .section-hero-ims {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .section-hero-ims img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+    }
+
+    /* bio-data************************ */
+    .section-biodata .grid-two-column {
+        grid-template-columns: 1fr;
+
+    }
+
+    .section-biodata .bio-image {
+        /* girdrow start 2
+        girdrow end 3  sort form below
+        or gird 2*/
+        grid-row: 2/3;
+        margin-top: 3.2rem;
+
+    }
+
+    .section-biodata .bio-image img {
+        width: 50%;
+
+    }
+
+    /* portfolio section*********************************** */
+    .section-portfolio .grid-three-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* work data section*********************************** */
+    .sectionn-work-data .grid-four-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
