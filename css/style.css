@@ -972,6 +972,7 @@ figure img {
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
+        position: fixed;
         z-index: 2;
     }
 
@@ -1000,7 +1001,15 @@ figure img {
 
     .active .mobile-navbaraaaa-btn .mobile-nav-icon[name="close-outline"] {
         display: block;
+        /* position: fixed; */
         /* z-index: 9999; */
+    }
+
+    .active .mobile-navbaraaaa-btn {
+
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
     }
 
     /* **************************sec=rvice section */
@@ -1023,6 +1032,13 @@ figure img {
 
     }
 
+    .active .mobile-navbaraaaa-btn {
+
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+    }
+
     .navbar-list {
         gap: 3.2rem;
     }
@@ -1033,6 +1049,13 @@ figure img {
     html {
         font-size: 56.25%;
         /* color: black; */
+    }
+
+    .active .mobile-navbaraaaa-btn {
+
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
     }
 
     .container {
@@ -1136,5 +1159,12 @@ figure img {
     /* work data section*********************************** */
     .sectionn-work-data .grid-four-column {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .active .mobile-navbaraaaa-btn {
+
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
     }
 }
