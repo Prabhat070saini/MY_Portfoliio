@@ -1141,6 +1141,7 @@ figure img {
         /* girdrow start 2
         girdrow end 3  sort form below
         or gird 2*/
+        /* swap two div horizantal */
         grid-row: 2/3;
         margin-top: 3.2rem;
 
@@ -1167,4 +1168,35 @@ figure img {
         right: 2rem;
         top: 2rem;
     }
+}
+
+/* ***************************560************************** */
+@media(max-width:35em) {
+    .container {
+        max-width: 48rem;
+        padding: 0 1.2rem;
+        margin: 0 1.2rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+/* color: #007aff; */
+
+    }
+
+    .header img {
+        width: 50%;
+
+    }
+    /* portfolio */
+    .p-btns{
+        gap: 2rem;
+    }
+    .btn.p-btn {
+        padding: 1rem 2rem;
+    }
+    .bio-image img {
+        width: 90%;
+        height: 90%;
+       
 }
