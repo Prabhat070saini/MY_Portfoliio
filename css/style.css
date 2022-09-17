@@ -79,7 +79,7 @@ header {
     padding: 1.5rem 4.8rem;
     height: 8rem;
     background-color: var(--bg);
-
+    /* position: sticky; */
 }
 
 header img {
@@ -1204,41 +1204,52 @@ figure img {
         height: 90%;
 
     }
+
     /* service section */
     .section-service .grid-three-column {
         grid-template-columns: repeat(1, 1fr);
     }
+
     /* freelanceing */
     .section-freelanceing h2 {
         text-transform: capitalize;
-    
+
         font-size: 3.2rem;
     }
+
     /* section cantact */
     .section-contact-main {
-        max-width: 44rem;
+        max-width: 39rem;
     }
+
     /* .section-footer .grid-four-column{
         grid-template-columns: repeat(1, 1fr);
     } */
-    .section-footer .gird{
+    .section-footer .gird {
         gap: 10.5rem;
     }
-    .section-footer .container{
+
+    .section-footer .container {
         max-width: 48rem;
         padding: 0px 0.2rem;
         margin: 0 2.2rem;
     }
-   .ovely .common-heading{
-    font-size: 2.8rem;
-   }
-   /* header */
-   .header img{
-    height: 72%;
-    width: 53%;
-   }
-   .section-footer .f-about ,
-   .section-footer .f-address{
-    grid-column: 1/-1;
-   }
+
+    .ovely .common-heading {
+        font-size: 2.8rem;
+    }
+
+    /* header */
+    .header img {
+        height: 72%;
+        width: 53%;
+    }
+
+    .section-footer .f-about,
+    .section-footer .f-address {
+        grid-column: 1/-1;
+    }
+    .section-text .container{
+        margin: 0 .2rem;
+    }
 }

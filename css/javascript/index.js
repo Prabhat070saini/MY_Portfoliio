@@ -27,7 +27,7 @@ p_btns.addEventListener('click', (e) => {
 //                      swiper
 //          *******************************************************            -->
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 30,
   autoplay: {
     Delay: 2500,
@@ -62,21 +62,19 @@ scroolTotopelement.addEventListener("click", scrollTop);
 //********************* */animatate number*******************************************
 
 const couterNUM = document.querySelectorAll(".counter-number");
-const speed=200;
-couterNUM.forEach((curElem)=>
-{
-  const updateNumber=()=>{
-    const targetNumber= parseInt(curElem.dataset.number);
+const speed = 200;
+couterNUM.forEach((curElem) => {
+  const updateNumber = () => {
+    const targetNumber = parseInt(curElem.dataset.number);
     // console.log(targetNumber);
-    const intitalNum=parseInt(curElem.innerText);
+    const intitalNum = parseInt(curElem.innerText);
     // console.log(intitalNum);
-    const increamentNumber=Math.trunc(targetNumber/speed);
+    const increamentNumber = Math.trunc(targetNumber / speed);
     // console.log(increamentNumber);
-    if(intitalNum<targetNumber)
-    {
-      curElem.innerText=`${intitalNum+increamentNumber}+`;
+    if (intitalNum < targetNumber) {
+      curElem.innerText = `${intitalNum + increamentNumber}+`;
     }
-    setTimeout(updateNumber,10);
+    setTimeout(updateNumber, 10);
 
   }
   updateNumber();
@@ -87,10 +85,33 @@ couterNUM.forEach((curElem)=>
 // createing responsive nav bar
 
 // ***********************************************
-const mobile_nav=document.querySelector(".mobile-navbaraaaa-btn");
-const headerElm=document.querySelector(".header");
+const mobile_nav = document.querySelector(".mobile-navbaraaaa-btn");
+const headerElm = document.querySelector(".header");
 
-mobile_nav.addEventListener("click",()=>{
+mobile_nav.addEventListener("click", () => {
   headerElm.classList.toggle("active");
 });
 console.log(10);
+console.log("underif");
+
+
+// apply css by js change swiper div 2 to 1
+const myjsmedia = (widthsize) => {
+  if (widthsize.matches) {
+    new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      
+    });
+  }
+  else {
+    new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+
+    });
+  }
+};
+const widthsize = window.matchMedia("(max-width:780px )");
+myjsmedia(widthsize);
+widthsize.addEventListener("change", myjsmedia);
