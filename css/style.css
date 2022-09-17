@@ -1218,11 +1218,16 @@ figure img {
     .section-contact-main {
         max-width: 44rem;
     }
-    .section-footer .grid-four-column{
+    /* .section-footer .grid-four-column{
         grid-template-columns: repeat(1, 1fr);
-    }
+    } */
     .section-footer .gird{
-        gap: 2.5rem;
+        gap: 10.5rem;
+    }
+    .section-footer .container{
+        max-width: 48rem;
+        padding: 0px 0.2rem;
+        margin: 0 2.2rem;
     }
    .ovely .common-heading{
     font-size: 2.8rem;
@@ -1231,5 +1236,9 @@ figure img {
    .header img{
     height: 72%;
     width: 53%;
+   }
+   .section-footer .f-about ,
+   .section-footer .f-address{
+    grid-column: 1/-1;
    }
 }
