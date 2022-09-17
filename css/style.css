@@ -1179,24 +1179,33 @@ figure img {
     }
 
     .header {
-        padding: 0 3.2rem;
-/* color: #007aff; */
+        padding: 1rem 1rem;
+        /* color: #007aff; */
 
     }
 
     .header img {
         width: 50%;
 
+
     }
+
     /* portfolio */
-    .p-btns{
+    .p-btns {
         gap: 2rem;
     }
+
     .btn.p-btn {
         padding: 1rem 2rem;
     }
+
     .bio-image img {
         width: 90%;
         height: 90%;
-       
+
+    }
+    /* service section */
+    .section-service .grid-three-column {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
